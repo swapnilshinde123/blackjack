@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta http-equiv ="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="blackjack.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Satisfy&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Irish+Grover&display=swap" rel="stylesheet">
+<title>Black Jack</title>
+
+</head>
+<body >
+
+   <div >      
+              <div class="bal"><span id="abc">💰Balance :- $<span id="Balance"></span></span></div>
+              <div class="bet"><span id="def">💰Bet :- $<span id="bet1"></span></span></div>
+              <button id="free">Free Coins</button>
+
+       <div >
+              <button id="c1"class="round1" width="100%" height="100%" onclick="bet(50)"><span class="p1">$50</span></button>
+              <button id="c2"class="round1" width="100%" height="100%" onclick="bet(100)"><span class="p1">$100</span></button>
+              <button id="c3"class="round1" width="100%" height="100%" onclick="bet(200)"><span class="p1">$200</span></button>
+              <button id="c4"class="round1" width="100%" height="100%" onclick="bet(500)"><span class="p1">$500</span></button>
+              <button id="c5"class="round1" width="100%" height="100%" onclick="bet(1000)"><span class="p1">$1000</span></button>
+              <button id="c6"class="round1" width="100%" height="100%" onclick="bet(2000)"><span class="p1">$2000</span></button>
+       </div>
+   
+             <div >
+                    <div id ="Abord" class="B " ><h2></h2><h3></h3><h1></h1></div>
+
+                    <div id ="Bbord" class="B" ><h2></h2><h3></h3><h1></h1></div>
+
+                    <div id ="Cbord" class="B" ><h2></h2><h3></h3><h1></h1></div>
+
+                    <div id ="Dbord" class="B"><h2></h2><h3></h3><h1></h1></div>
+
+                    <div id ="Ebord" class="B"><h2></h2><h3></h3><h1></h1></div>
+           </div>
+
+                  <hr class="type_7">
+
+           <div >
+
+                    <div id ="A1bord" class="B"><h2></h2><h3></h3><h1></h1></div>
+    
+                    <div id ="B1bord" class="B"><h2></h2><h3></h3><h1></h1></div>
+
+                    <div id ="C1bord" class="B"><h2></h2><h3></h3><h1></h1></div>
+
+                    <div id ="D1bord" class="B"><h2 ></h2><h3></h3><h1></h1></div>
+
+                    <div id ="E1bord" class="B"><h2></h2><h3></h3><h1></h1></div>
+
+           </div >
+
+
+                <div>
+                    
+                    <button id="Hit"><p class="D">Hit</p></button>
+                    <button id="Stand"><p class="D">Stand</p></button>
+                    <button id="Deal"><p class="D">Deal</p></button>
+                    <span id="warn">Hint :- 🤗Please Place Bet First Before You Deal🤗</span>
+                </div>
+                
+    </div>
+
+           <div id="overlay">
+         
+               <p id="name" class="blinking">Black Jack</p>
+               <a href="#"  id="flip"  onclick="off()" class="btn btn-white  ">Play  Game</a>
+           </div>
+
+           <div id="overlay1">
+               <p id="bet_won"></p>
+               <p id="win"></p>
+               <a href="#"  id="flip"  onclick="off1()" class="btn btn-white  ">Play Again</a>
+           </div>
+
+
+<script src="blackjack.js"></script>
+
+</body>
+</html>
